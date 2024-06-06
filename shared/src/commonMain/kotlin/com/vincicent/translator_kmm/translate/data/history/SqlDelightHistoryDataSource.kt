@@ -2,7 +2,7 @@ package com.vincicent.translator_kmm.translate.data.history
 
 import app.cash.sqldelight.coroutines.asFlow
 import app.cash.sqldelight.coroutines.mapToList
-import com.plcoding.translator_kmm.database.TranslateDatabase
+import com.vincicent.translator_kmm.database.TranslateDatabase
 import com.vincicent.translator_kmm.core.domain.util.CommonFlow
 import com.vincicent.translator_kmm.core.domain.util.toCommonFlow
 import com.vincicent.translator_kmm.translate.domain.history.HistoryDataSource
