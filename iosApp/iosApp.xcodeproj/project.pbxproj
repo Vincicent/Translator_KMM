@@ -11,6 +11,7 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		AE50220D2C1207EF00F0B656 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50220C2C1207EE00F0B656 /* Colors.swift */; };
 		B92D4B99021CC2E7DA34383C /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0161A4A4C17A6210B19A9A9 /* Pods_iosApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E9E3DD35502D4A29B899627 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AE50220C2C1207EE00F0B656 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D0161A4A4C17A6210B19A9A9 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				AE50220A2C12076900F0B656 /* core */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
@@ -74,6 +77,22 @@
 				058557D7273AAEEB004C7B11 /* Preview Content */,
 			);
 			path = iosApp;
+			sourceTree = "<group>";
+		};
+		AE50220A2C12076900F0B656 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				AE50220B2C12078100F0B656 /* presentation */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		AE50220B2C12078100F0B656 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AE50220C2C1207EE00F0B656 /* Colors.swift */,
+			);
+			path = presentation;
 			sourceTree = "<group>";
 		};
 		CB4F23A6F758FFD08443FBB3 /* Frameworks */ = {
@@ -227,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				AE50220D2C1207EF00F0B656 /* Colors.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +387,7 @@
 					"${SRCROOT}/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,7 +420,7 @@
 					"${SRCROOT}/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

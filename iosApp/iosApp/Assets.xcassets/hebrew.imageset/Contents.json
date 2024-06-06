@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "hebrew.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
