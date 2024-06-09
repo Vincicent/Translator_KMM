@@ -29,9 +29,6 @@ struct TranslateTextField: View {
             .cornerRadius(15)
             .animation(.easeInOut, value: isTranslating)
             .shadow(radius: 4)
-            .onTapGesture {
-                onTranslateEvent(TranslateEvent.EditTranslation())
-            }
         } else {
             TranslatedTextField(
                 fromText: fromText,
@@ -59,7 +56,7 @@ struct TranslateTextField: View {
             set: { value in }
         ),
         toText: "Test",
-        isTranslating: false,
+        isTranslating: true,
         fromLanguage: UiLanguage(language: .english, imageName: "english"),
         toLanguage: UiLanguage(language: .german, imageName: "german"),
         onTranslateEvent: { event in }
@@ -81,6 +78,7 @@ private extension TranslateTextField {
                     alignment: .topLeading
                 )
                 .padding()
+                .transparentScrolling()
                 .foregroundColor(Color.onSurface)
                 .overlay(alignment: .bottomTrailing) {
                     ProgressButton(
