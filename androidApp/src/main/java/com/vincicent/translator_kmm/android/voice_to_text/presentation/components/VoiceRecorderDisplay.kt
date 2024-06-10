@@ -74,7 +74,7 @@ fun VoiceRecorderDisplay(
 
 @Preview
 @Composable
-fun VoiceRecorderDisplayPreview() {
+private fun VoiceRecorderDisplayPreview() {
     TranslatorTheme {
         VoiceRecorderDisplay(
             powerRatios = (0..100).map {
