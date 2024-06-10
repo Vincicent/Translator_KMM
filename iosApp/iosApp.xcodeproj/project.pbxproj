@@ -19,6 +19,8 @@
 		AE50221A2C1218DB00F0B656 /* IOSTranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5022192C1218DB00F0B656 /* IOSTranslateViewModel.swift */; };
 		AE50221C2C1218F000F0B656 /* TranslateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50221B2C1218F000F0B656 /* TranslateScreen.swift */; };
 		AEAE16842C15FC7F00F625BE /* TranslateHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE16832C15FC7F00F625BE /* TranslateHistoryItem.swift */; };
+		AEAE16882C17515500F625BE /* MicrophonePowerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE16872C17515400F625BE /* MicrophonePowerObserver.swift */; };
+		AEAE168A2C175EB100F625BE /* IOSVoiceToTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAE16892C175EB000F625BE /* IOSVoiceToTextParser.swift */; };
 		AEB4E18E2C13445700104FD1 /* GradientSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4E18D2C13445700104FD1 /* GradientSurface.swift */; };
 		AEB4E1902C135D3A00104FD1 /* LanguageDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4E18F2C135D3A00104FD1 /* LanguageDisplay.swift */; };
 		AEB4E1922C135DE600104FD1 /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4E1912C135DE500104FD1 /* ProgressButton.swift */; };
@@ -44,6 +46,8 @@
 		AE5022192C1218DB00F0B656 /* IOSTranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSTranslateViewModel.swift; sourceTree = "<group>"; };
 		AE50221B2C1218F000F0B656 /* TranslateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateScreen.swift; sourceTree = "<group>"; };
 		AEAE16832C15FC7F00F625BE /* TranslateHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateHistoryItem.swift; sourceTree = "<group>"; };
+		AEAE16872C17515400F625BE /* MicrophonePowerObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophonePowerObserver.swift; sourceTree = "<group>"; };
+		AEAE16892C175EB000F625BE /* IOSVoiceToTextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSVoiceToTextParser.swift; sourceTree = "<group>"; };
 		AEB4E18D2C13445700104FD1 /* GradientSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientSurface.swift; sourceTree = "<group>"; };
 		AEB4E18F2C135D3A00104FD1 /* LanguageDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDisplay.swift; sourceTree = "<group>"; };
 		AEB4E1912C135DE500104FD1 /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				AEAE16852C17510C00F625BE /* voice_to_text */,
 				AE50220E2C120EAE00F0B656 /* translate */,
 				AE50220A2C12076900F0B656 /* core */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
@@ -153,6 +158,23 @@
 				AEAE16832C15FC7F00F625BE /* TranslateHistoryItem.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		AEAE16852C17510C00F625BE /* voice_to_text */ = {
+			isa = PBXGroup;
+			children = (
+				AEAE16862C17511F00F625BE /* data */,
+			);
+			path = voice_to_text;
+			sourceTree = "<group>";
+		};
+		AEAE16862C17511F00F625BE /* data */ = {
+			isa = PBXGroup;
+			children = (
+				AEAE16872C17515400F625BE /* MicrophonePowerObserver.swift */,
+				AEAE16892C175EB000F625BE /* IOSVoiceToTextParser.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 		CB4F23A6F758FFD08443FBB3 /* Frameworks */ = {
@@ -306,9 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB4E1922C135DE600104FD1 /* ProgressButton.swift in Sources */,
+				AEAE16882C17515500F625BE /* MicrophonePowerObserver.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				AEB4E18E2C13445700104FD1 /* GradientSurface.swift in Sources */,
 				AE5022122C120EE500F0B656 /* LanguageDropDownItem.swift in Sources */,
+				AEAE168A2C175EB100F625BE /* IOSVoiceToTextParser.swift in Sources */,
 				AEB4E1902C135D3A00104FD1 /* LanguageDisplay.swift in Sources */,
 				AE5022162C12154D00F0B656 /* SmallLanguageIcon.swift in Sources */,
 				AE50221A2C1218DB00F0B656 /* IOSTranslateViewModel.swift in Sources */,
