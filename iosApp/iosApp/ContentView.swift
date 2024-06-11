@@ -5,16 +5,18 @@ struct ContentView: View {
     
     private let appModule = AppModule()
     
-	var body: some View {
-        ZStack {
-            Color.background
-                .ignoresSafeArea()
-            TranslateScreen(
-                historyDataSource: appModule.historyDataSource,
-                translateUseCase: appModule.translateUseCase
-            )
+    var body: some View {
+        NavigationView {
+            ZStack {
+                Color.background
+                    .ignoresSafeArea()
+                TranslateScreen(
+                    historyDataSource: appModule.historyDataSource,
+                    translateUseCase: appModule.translateUseCase
+                )
+            }
         }
-	}
+    }
 }
 
 public extension View {

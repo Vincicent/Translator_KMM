@@ -97,7 +97,6 @@ class IOSVoiceToTextParser: VoiceToTextParser, ObservableObject {
                 self?.updateState(error: error.localizedDescription, isSpeaking: false)
             }
         }
-        
     }
     
     func stopListening() {
@@ -110,7 +109,6 @@ class IOSVoiceToTextParser: VoiceToTextParser, ObservableObject {
         audioBufferRequest = nil
         
         audioEngine?.stop()
-        audioEngine = nil
         
         inputNode?.removeTap(onBus: 0)
         

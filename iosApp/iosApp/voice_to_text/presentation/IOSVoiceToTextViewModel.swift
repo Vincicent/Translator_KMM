@@ -10,7 +10,7 @@ import Foundation
 import shared
 import Combine
 
-@MainActor class IOSVoiceToTextViewMode: ObservableObject {
+@MainActor class IOSVoiceToTextViewModel: ObservableObject {
     private var parser: any VoiceToTextParser
     private let languageCode: String
     
@@ -22,10 +22,14 @@ import Combine
         self.parser = parser
         self.languageCode = languageCode
         self.viewModel = VoiceToTextViewModel(parser: parser, coroutineScope: nil)
+        self.viewModel.onEvent(event: VoiceToTextEvent.PermissionResult(isGranted: true, isPermanentlyDeclined: false))
     }
     
     func onEvent(event: VoiceToTextEvent) {
         viewModel.onEvent(event: event)
+        if event == .Reset() {
+            self.viewModel.onEvent(event: VoiceToTextEvent.PermissionResult(isGranted: true, isPermanentlyDeclined: false))
+        }
     }
     
     func startObserving() {
