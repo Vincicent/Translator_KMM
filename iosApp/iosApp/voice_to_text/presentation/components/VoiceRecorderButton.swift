@@ -22,7 +22,9 @@ struct VoiceRecorderButton: View {
                 icon
                     .foregroundColor(.onPrimary)
             }
-        }.frame(maxWidth: 100, maxHeight: 100)
+        }
+        .frame(maxWidth: 100, maxHeight: 100)
+        .accessibilityIdentifier("Voice recorder button")
     }
     
     var icon: some View {
