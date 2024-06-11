@@ -30,7 +30,7 @@ class SqlDelightHistoryDataSource(
             .toCommonFlow()
     }
 
-    override fun insertHistoryItem(item: HistoryItem) {
+    override suspend fun insertHistoryItem(item: HistoryItem) {
         queries.insertHistoryEntity(
             id = item.id,
             fromLanguageCode = item.fromLanguageCode,
