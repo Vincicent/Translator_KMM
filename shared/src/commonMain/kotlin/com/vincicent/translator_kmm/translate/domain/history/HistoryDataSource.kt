@@ -5,5 +5,5 @@ import kotlin.coroutines.CoroutineContext
 
 interface HistoryDataSource {
     fun getHistory(context: CoroutineContext): CommonFlow<List<HistoryItem>>
-    fun insertHistoryItem(item: HistoryItem)
+    suspend fun insertHistoryItem(item: HistoryItem)
 }
